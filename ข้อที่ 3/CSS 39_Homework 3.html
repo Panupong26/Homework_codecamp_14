@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook เข้าสู่ระบบหรือสมัครใช้งาน</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://static.xx.fbcdn.net/rsrc.php/yb/r/hLRJ1GG_y0J.ico">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box; 
+            font-family: 'Noto Sans Thai', sans-serif;
+            background: url(https://picsum.photos/id/941/2400);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: rgb(52, 54, 54);     
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;   
+        }
+        img {
+            height: 120px;
+            margin-bottom: -30px;
+        }     
+        h2 {
+            margin: 0 5px;
+            font-size: 1.8em;
+        }
+        .line {
+            display: inline-block;
+            border-top: 0.2px solid rgba(52, 54, 54, 0.417);
+            width: 100%;
+        }
+        .LogoText {
+            flex: 0 1 500px;
+            position: relative;
+            top: -50px;
+            margin: 50px;
+        }
+        .Rcontent {
+            text-align: center;
+            flex: 0 0 500px;       
+        }
+        .Form {
+            background-color: rgba(66, 65, 66, 0.302);
+            padding: 5px 15px 25px;
+            margin: 50px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(54, 52, 52, 0.833);   
+        }
+        input {
+            position: relative;
+            right: 7px;
+            height: 45px;
+            width: 100%;
+            border: 1px solid rgba(109, 105, 105, 0.741);
+            border-radius: 5px;
+            margin: 5px 0px;
+            font-size: 18px;
+            background-color: rgba(255, 255, 255, 0.541);
+            color: black;
+            padding-left: 10px;   
+        }
+        button {
+            height: 45px;
+            width: 100%;
+            border-style: none;
+            border-radius: 5px;
+            margin: 15px 0px;
+            font-size: 18px;
+            background-color: rgb(8, 139, 233);
+        }
+        button:hover {
+            cursor: pointer;
+            background-color: rgb(34, 127, 215);
+        }
+        a {
+            text-decoration: none
+        }
+        .textlink:hover, li a:hover {
+            text-decoration: underline
+        }
+        .signupbutton {
+            display: inline-block;
+            background-color: rgb(58, 200, 58);
+            height: 25px;
+            width: 40%;
+            border-style: none;
+            border-radius: 5px;
+            font-size: 18px;
+            text-align: center;
+            padding: 10px 0px 10px;
+            margin-top: 20px;
+            color: white;
+        }
+        .signupbutton:hover {
+            cursor: pointer;
+            background-color:  rgb(26, 183, 31);
+
+        }
+        .RBcontent {
+            background-color: rgba(255, 255, 255, 0.629);
+            margin: 10px 50px;
+            border-radius: 5px;
+        }
+        .footarea {
+            background-color: rgba(255, 255, 255, 0.658);
+            padding: 20px;
+        }
+        li {
+            font-weight: 200;
+        }
+        li a{
+            margin-right: 20px;
+            color: rgb(32, 33, 33);
+            flex-shrink: 0;
+        }
+        .localeSelectorList, .FooterLinkList {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+        }
+        @media (max-width: 1045px) {
+            .content {
+                flex-wrap: wrap;
+                align-content: flex-start;
+                } 
+            div[class="LogoText"] {
+                margin-bottom: 20px;
+                top: 0;
+                font-size: 0.6em;
+                text-align: center;
+            }
+            div[class="Form"] {
+                margin-top: 0;
+            }  
+        }  
+        @media (max-width: 1080px) {
+            div.LogoText {
+                font-size: 0.8em;    
+            }     
+        }
+        @media (max-width: 650px) {
+            div.LogoText {
+                font-size: 0.6em;
+                flex: 0 0 380px ;    
+            }  
+            div.Form {
+                margin-top: 18px;
+            }  
+        } 
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="LogoText">
+            <img src="Facebook-Logo-PNG5.png" alt="FacebookLogo">
+            <h2 class="h2">Facebook ช่วยคุณเชื่อมต่อและแชร์กับผู้คนมากมายรอบตัวคุณ</h2>
+        </div>
+        <div class="Rcontent">
+            <div class="Form">
+                <form>
+                    <input type="text" name="Username" placeholder=" อีเมลหรือหมายเลขโทรศัพท์มือถือ">
+                    <input type="password" name="Password" placeholder=" รหัสผ่าน">
+                    <button type="submit" style="color: white;">เข้าสู่ระบบ</button>
+                </form>
+                <a href="https://th-th.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0" class="textlink" style="color: rgb(52, 54, 54);">ลืมรหัสผ่านใช่หรือไม่?</a>
+                <span class="line"></span>
+                <a href="https://www.facebook.com/signup" class="signupbutton">สร้างบัญชีใหม่</a>
+            </div>
+            <div class="RBcontent">
+                <a href="https://th-th.facebook.com/pages/create/?ref_type=registration_form" class="textlink" style="font-size: 1.2em; color:rgb(52, 54, 54);">สร้างเพจ</a>
+                <span style="font-weight: 300; font-size: 1.1em;">สำหรับคนดัง แบรนด์ หรือธุรกิจ</span>
+            </div>
+        </div>
+    </div>
+    <div class="footarea">
+        <ul class="localeSelectorList">
+            <li style="margin-right: 20px;">ภาษาไทย</li>
+            <li><a class="_sv4" dir="ltr" href="https://en-gb.facebook.com/" title="English (UK)">English (UK)</a></li>
+            <li><a class="_sv4" dir="ltr" href="https://fr-fr.facebook.com/" title="French (France)">Français (France)</a></li>
+            <li><a class="_sv4" dir="ltr" href="https://ja-jp.facebook.com/" title="Japanese">日本語</a></li>
+            <li><a class="_sv4" dir="ltr" href="https://zh-cn.facebook.com/" title="Simplified Chinese (China)">中文(简体)</a></li>
+            <li><a class="_sv4" dir="ltr" href="https://vi-vn.facebook.com/" title="Vietnamese">Tiếng Việt</a></li>
+            <li><a class="_sv4" dir="ltr" href="https://de-de.facebook.com/" title="German">Deutsch</a></li>
+            <li><a class="_sv4" dir="ltr" href="https://ru-ru.facebook.com/" title="Russian">Русский</a></li>
+            <li><a class="_sv4" dir="ltr" href="https://es-la.facebook.com/" title="Spanish">Español</a></li>
+            <li><a class="_sv4" dir="ltr" href="https://pt-br.facebook.com/" title="Portuguese (Brazil)">Português (Brasil)</a></li>
+            <li><a class="_sv4" dir="ltr" href="https://it-it.facebook.com/" title="Italian">Italiano</a></li>
+        </ul>
+        <span class="line"></span>
+        <ul class="FooterLinkList">
+            <li><a href="https://facebook.com/reg/" title="สมัครใช้งาน Facebook">สมัคร</a></li>
+            <li><a href="https://facebook.com/login/" title="เข้าสู่ระบบ Facebook">เข้าสู่ระบบ</a></li>
+            <li><a href="https://messenger.com/" title="เข้าไปดู Messenger">Messenger</a></li>
+            <li><a href="https://facebook.com/lite/" title="Facebook Lite สำหรับ Android">Facebook Lite</a></li>
+            <li><a href="https://th-th.facebook.com/watch/" title="เลือกดูวิดีโอ Watch ของเรา">Watch</a></li>
+            <li><a href="https://facebook.com/places/" title="ดูสถานที่ที่กำลังเป็นที่นิยมบนเฟซบุ๊ค">สถานที่</a></li>
+            <li><a href="https://facebook.com/games/" title="ลองเล่นเกมบน Facebook">เกม</a></li>
+            <li><a href="https://facebook.com/marketplace/" title="ซื้อและขายสินค้าบน Facebook Marketplace">Marketplace</a></li>
+            <li><a href="https://pay.facebook.com/" title="เรียนรู้เพิ่มเติมเกี่ยวกับ Meta Pay" target="_blank">Meta Pay</a></li>
+            <li><a href="https://www.oculus.com/" title="เรียนรู้เพิ่มเติมเกี่ยวกับ Oculus" target="_blank">Oculus</a></li>
+            <li><a href="https://portal.facebook.com/" title="เรียนรู้เพิ่มเติมเกี่ยวกับ Facebook Portal" target="_blank">Portal</a></li>
+            <li><a href="https://www.instagram.com/" title="ลองดู Instagram" target="_blank" rel="noopener nofollow" data-lynx-mode="asynclazy" data-lynx-uri="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&amp;h=AT1a9QsxlM4Z1iiGAh9PgvBGGzg2rqpndeoDJM14YUoP9n7RFWlljtiC1kJg3dbwu_VugvYLTlqqQeYjmHqAZP2lGp0QoQ_gU6O0GTRutm6tETRjz1268lu-VVGUA01pNHB4x6LiVI54252VC7lZucbNJ0s">Instagram</a></li>
+            <li><a href="https://www.bulletin.com/" title="ดูจดหมายข่าวของ Bulletin">Bulletin</a></li>
+            <li><a href="https://facebook.com/fundraisers/" title="บริจาคให้กับการกุศลที่น่ายกย่อง">โครงการระดมทุน</a></li>
+            <li><a href="https://facebook.com/biz/directory/" title="ดูไดเรกทอรีบริการ Facebook ของเรา">บริการ</a></li>
+            <li><a href="https://facebook.com/votinginformationcenter/?entry_point=c2l0ZQ%3D%3D" title="ดูศูนย์ข้อมูลการลงคะแนนเสียง">ศูนย์ข้อมูลการลงคะแนนเสียง</a></li>
+            <li><a href="https://facebook.com/privacy/policy/?entry_point=facebook_page_footer" title="เรียนรู้วิธีที่เราเก็บ ใช้ และแชร์ข้อมูลเพื่อสนับสนุน Facebook">นโยบายความเป็นส่วนตัว</a></li>
+            <li><a href="https://facebook.com/privacy/center/?entry_point=facebook_page_footer" title="เรียนรู้วิธีจัดการและควบคุมความเป็นส่วนตัวของคุณบน Facebook">ศูนย์ความเป็นส่วนตัว</a></li>
+            <li><a href="https://facebook.com/groups/explore/" title="สำรวจกลุ่มของเรา">กลุ่ม</a></li><li><a href="https://about.meta.com/" accesskey="8" title="อ่านเว็บบล็อกของเรา สำรวจศูนย์รวมแหล่งข้อมูล และค้นหาโอกาสในการจ้างงาน">เกี่ยวกับ</a></li>
+            <li><a href="https://facebook.com/ad_campaign/landing.php?placement=pflo&amp;campaign_id=402047449186&amp;nav_source=unknown&amp;extra_1=auto" title="ลงโฆษณาบน Facebook">สร้างโฆษณา</a></li>
+            <li><a href="https://facebook.com/pages/create/?ref_type=site_footer" title="สร้างเพจ">สร้างเพจ</a></li>
+            <li><a href="https://developers.facebook.com/?ref=pf" title="พัฒนาบนแพลตฟอร์มของเรา">ผู้พัฒนา</a></li>
+            <li><a href="https://facebook.com/careers/?ref=pf" title="ก้าวหน้าไปอีกขั้นในหน้าที่การงานของคุณด้วยการมาร่วมงานกับบริษัทที่ยอดเยี่ยมของเรา">ร่วมงานกับ Facebook</a></li>
+            <li><a href="https://facebook.com/policies/cookies/" title="เรียนรู้เกี่ยวกับคุกกี้และ Facebook" data-nocookies="1">คุกกี้</a></li>
+            <li><a class="_41ug" data-nocookies="1" href="https://www.facebook.com/help/568137493302217" title="เรียนรู้เกี่ยวกับตัวเลือกโฆษณา">ตัวเลือกโฆษณา<i class="img sp_h4Swrc8tiWJ sx_22044a"></i></a></li>
+            <li><a data-nocookies="1" href="https://facebook.com/policies?ref=pf" accesskey="9" title="อ่านข้อกำหนดและนโยบายของเรา">เงื่อนไข</a></li>
+            <li><a href="https://facebook.com/help/?ref=pf" accesskey="0" title="ไปที่ศูนย์ช่วยเหลือของเรา">ความช่วยเหลือ</a></li>
+            <li><a href="https://facebook.com/help/637205020878504" title="ไปที่ประกาศการอัพโหลดผู้ติดต่อและผู้ที่ไม่ได้ใช้บริการ">การอัพโหลดผู้ติดต่อและผู้ที่ไม่ได้ใช้บริการ</a></li>
+            <li><a accesskey="6" class="accessible_elem" href="https://facebook.com/settings" title="ดูและแก้ไขการตั้งค่า Facebook ของคุณ">การตั้งค่า</a></li>
+            <li><a accesskey="7" class="accessible_elem" href="https://facebook.com/allactivity?privacy_source=activity_log_top_menu" title="ดูบันทึกกิจกรรมของคุณ">บันทึกกิจกรรม</a></li>
+        </ul>
+    </div>   
+</body>
+</html>
